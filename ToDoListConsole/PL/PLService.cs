@@ -63,6 +63,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("Название задачи не может быть пустым!");
                     break;
                 }
             }
@@ -87,6 +88,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("Название задачи не может быть пустым!");
                     break;
                 }
             }
@@ -101,6 +103,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("Приоритет задачи должен быть числом!");
                     break;
                 }
             }
@@ -115,6 +118,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("Текст задачи не может быть пустым!");
                     break;
                 }
             }
@@ -135,6 +139,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("ID задачи должен быть числом!");
                     break;
                 }
             }
@@ -160,6 +165,7 @@ namespace ToDoListConsole.PL
                 }
                 else
                 {
+                    Console.WriteLine("ID задачи должен быть числом!");
                     break;
                 }
             }
