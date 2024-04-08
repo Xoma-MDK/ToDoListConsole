@@ -3,13 +3,13 @@ using ToDoListConsole.BLL.Models;
 
 namespace ToDoListConsole.DAL
 {
-    public class TextFileDataStorage : IDataStorage
+    public class JsonFileDataStorage : IDataStorage
     {
         private int _counterIds = 0;
         private readonly List<ToDoTask> _toDoTasks = [];
         private readonly string _filePath;
 
-        public TextFileDataStorage(string filePath)
+        public JsonFileDataStorage(string filePath)
         {
             _filePath = filePath;
             LoadDataFromJson();

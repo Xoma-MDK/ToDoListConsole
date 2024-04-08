@@ -25,8 +25,8 @@ namespace ToDoListConsole
             IToDoService? todoService;
             switch (_settings.DataAccessLayer)
             {
-                case DataAccessLayer.TextFile:
-                    todoService = new ToDoService(new TextFileDataStorage(_settings.FilePath));
+                case DataAccessLayer.JsonFile:
+                    todoService = new ToDoService(new JsonFileDataStorage(_settings.FilePath));
                     break;
                 case DataAccessLayer.Memory:
                     todoService = new ToDoService(new MemoryDataStorage());

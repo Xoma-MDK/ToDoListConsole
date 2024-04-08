@@ -2,7 +2,7 @@
 {
     public enum DataAccessLayer
     {
-        TextFile,
+        JsonFile,
         Memory
     }
     public class AppSettings
