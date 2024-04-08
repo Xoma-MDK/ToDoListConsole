@@ -26,7 +26,7 @@ namespace ToDoListConsole
             switch (_settings.DataAccessLayer)
             {
                 case DataAccessLayer.TextFile:
-                    todoService = new ToDoService(new TextFileDataStorage());
+                    todoService = new ToDoService(new TextFileDataStorage(_settings.FilePath));
                     break;
                 case DataAccessLayer.Memory:
                     todoService = new ToDoService(new MemoryDataStorage());

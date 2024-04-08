@@ -41,7 +41,7 @@ namespace ToDoListConsole.DAL
             oldtask.Name = task.Name;
             oldtask.Text = task.Text;
             oldtask.IsCompleted = task.IsCompleted;
-            return (ToDoTask)oldtask;
+            return oldtask;
         }
     }
 }
