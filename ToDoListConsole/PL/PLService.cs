@@ -59,11 +59,11 @@ namespace ToDoListConsole.PL
                 name = Console.ReadLine();
                 if (name == null || name == string.Empty)
                 {
+                    Console.WriteLine("Название задачи не может быть пустым!");
                     Console.Write("Введите часть названия для поиска: ");
                 }
                 else
                 {
-                    Console.WriteLine("Название задачи не может быть пустым!");
                     break;
                 }
             }
@@ -84,11 +84,11 @@ namespace ToDoListConsole.PL
                 name = Console.ReadLine();
                 if (name == null || name == string.Empty)
                 {
+                    Console.WriteLine("Название задачи не может быть пустым!");
                     Console.Write("Введите название задачи: ");
                 }
                 else
                 {
-                    Console.WriteLine("Название задачи не может быть пустым!");
                     break;
                 }
             }
@@ -99,11 +99,11 @@ namespace ToDoListConsole.PL
                 var priorityString = Console.ReadLine();
                 if (!int.TryParse(priorityString, out priority))
                 {
+                    Console.WriteLine("Приоритет задачи должен быть числом!");
                     Console.Write("Введите приоритет задачи: ");
                 }
                 else
                 {
-                    Console.WriteLine("Приоритет задачи должен быть числом!");
                     break;
                 }
             }
@@ -114,11 +114,11 @@ namespace ToDoListConsole.PL
                 text = Console.ReadLine();
                 if (text == null || text == string.Empty)
                 {
+                    Console.WriteLine("Текст задачи не может быть пустым!");
                     Console.Write("Введите текст задачи: ");
                 }
                 else
                 {
-                    Console.WriteLine("Текст задачи не может быть пустым!");
                     break;
                 }
             }
@@ -135,11 +135,11 @@ namespace ToDoListConsole.PL
                 var idString = Console.ReadLine();
                 if (!int.TryParse(idString, out id))
                 {
+                    Console.WriteLine("ID задачи должен быть числом!");
                     Console.Write("Введите ID задачи для пометки как выполненной: ");
                 }
                 else
                 {
-                    Console.WriteLine("ID задачи должен быть числом!");
                     break;
                 }
             }
@@ -161,11 +161,11 @@ namespace ToDoListConsole.PL
                 var idString = Console.ReadLine();
                 if (!int.TryParse(idString, out id))
                 {
+                    Console.WriteLine("ID задачи должен быть числом!");
                     Console.Write("Введите ID задачи для удаления: ");
                 }
                 else
                 {
-                    Console.WriteLine("ID задачи должен быть числом!");
                     break;
                 }
             }
